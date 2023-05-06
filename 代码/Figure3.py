@@ -71,16 +71,3 @@ hor = np.arange(len(ti))
 plt.bar(ti,x,width = 0.25,color = '#0077b6',label = 'Home Win Games')
 plt.bar(hor + 0.25,y,width = 0.25,color = '#fb8500',label = 'Away Lose Games')
 plt.legend()
-
-
-x = [get_mean(win_filt,'PTS_home'),get_mean(win_filt,'AST_home'),
-    get_mean(win_filt,'REB_home')]
-y = [get_mean(lose_filt,'PTS_away'),get_mean(lose_filt,'AST_away'),
-    get_mean(lose_filt,'REB_away')]
-
-ti = ['Points Allowed','Assist','Rebound']
-hor = np.arange(len(ti))
-
-plt.bar(ti,x,width = 0.25,color = '#0077b6',label = 'Home Win Games')
-plt.bar(hor + 0.25,y,width = 0.25,color = '#fb8500',label = 'Away Win Games')
-plt.legend()
